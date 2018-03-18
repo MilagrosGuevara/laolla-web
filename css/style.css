@@ -189,6 +189,7 @@ h1{
 				color: #ffffff;
 				font-size: 19.5px;
 				font-weight: lighter;
+				text-align: center;
 
 			}
 
@@ -237,6 +238,7 @@ h1{
 				line-height: 25.5px;
 				margin-top: 27px;
 				margin-bottom: 31px;
+				font-weight: lighter;
 			}
 				.steps__title--alpha{
 					color: #ff9016;
@@ -346,6 +348,7 @@ h1{
 		margin: 0;
 		padding: 0;
 		margin-top: 51px;
+		font-weight: lighter;
 	}
 
 	.opinion__autor{
@@ -612,7 +615,8 @@ footer{
     		width: 35px;    		
     		border: none;
     		box-sizing: border-box;    		
-    		vertical-align: middle;    	    		
+    		vertical-align: middle;
+    		cursor: pointer;  	    		
 		}
 
 			.fa-angle-right{
