@@ -3,11 +3,15 @@
 <head>
 	<title>La Olla</title>
 	<meta charset="UTF-8">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="slick/slick.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="shortcut icon" type="image/x-png" href="images/logo.png"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>	
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<script src="jscode.js"></script>
 
 </head>
 <body>
@@ -204,7 +208,7 @@
 			<div class="container__delta">
 				<h3 class="instagram__title">INSTAGRAM</h3>
 				<div class="instagram__line"></div>
-				<div class="slider">
+				<div class="slider" data-slick='{"slidesToShow": 5, "slidesToScroll": 5}' arrows="true">
 	  				<div><img src="images/foto1.jpg" alt="Foto 1"></div>
 					<div><img src="images/foto2.jpg" alt="Foto 2"></div>
 					<div><img src="images/foto3.jpg" alt="Foto 3"></div>
@@ -264,20 +268,6 @@
 				</ul>
 			</div>
 		</div>
-	</footer>
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script src="slick/slick.min.js"></script>
-
-	<script>
-		jQuery('.slider').slick({
- 		infinite: true,
- 		centerMode: true,
- 		slidesToShow: 5,
-  		slidesToScroll: 5,
-  		arrows: true
-		});
-
-	</script>
+	</footer>	
 </body>
 </html>
