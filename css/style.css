@@ -670,3 +670,306 @@ footer{
 					font-size: 19px;
 					font-weight: bold;
 				}
+	
+@media screen and (max-width: 768px)
+
+{
+	.home__text{
+		padding-top: 311px;
+		padding-left: 45px;
+	}
+	
+	.header__bar{
+		padding: 0 22px;
+	}
+
+	.menu__link{
+		margin-right: 25px;
+	}
+		.menu__link--last{
+			margin-right: 0;
+		}
+
+	.box__container{
+		flex-wrap: wrap-reverse;
+	}
+
+	.box--beta{
+		width: 525px;
+	}
+
+	.service--items{
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding: 0px 30px;
+    	list-style: none;
+	}
+
+	.portafolio--flex{
+		justify-content: space-around;
+	}
+
+	.portafolio--flex li{
+		margin-bottom: 10px;
+	}
+
+	.resume--container{
+		flex-wrap: wrap;
+	}
+
+	.resume--box{
+		width: 100%;
+	}
+
+		.resume--box img{
+			margin: 0 auto;
+		}
+	
+	.resume--boxAlpha{
+		padding: 0px 133px;
+   	 	padding-bottom: 70px;
+	}
+	
+	
+	.barPink{
+		width: 280px;
+	}
+
+	.barBlack{
+		width: 210px;
+	}
+
+	.barPinkA{
+		width: 381px;
+	}
+
+	.barBlackA{
+		width: 109px;
+	}
+	
+	.barPinkB {
+    	width: 323px;
+	}
+
+	.barBlackB {
+    	width: 167px;
+	}
+	
+	.barPinkC {
+    	width: 365px;
+	}
+
+	.barBlackC {
+    	width: 125px;
+	}
+
+	form ul{
+		width: 680px;
+	}
+
+	#adress{
+		width: 680px;
+	}
+
+	textarea{
+		width: 680px;
+	}
+	
+	.info-contacto{
+		padding-top: 173.5px;
+		padding-bottom: 173.5px;
+	}
+
+	.info--list{
+		padding-top: 60px;
+    	padding-bottom: 60px;
+    	width: 56%;
+    	display: flex;
+    	flex-wrap: wrap;
+    	align-items: center;
+    	align-content: center;
+		border-radius: 15px;
+	}
+	
+	.info--list i{
+		font-size: 24px;
+    	padding: 8px;
+	}
+	
+	.info--list li{
+		margin-bottom: 35px;
+	}
+
+	.info--list li:last-child{
+		margin-bottom: 0;
+	}
+
+
+	i.fa-phone {
+
+    	font-size: 30px;
+    	padding: 4px 8px;
+	
+	}
+
+	i.fa-map-marker {
+    	padding: 6px 12px;
+    	font-size: 30px;
+	}
+
+	.email-div{
+		margin-right: 25px;
+	}
+	
+	.footer--list{
+		justify-content: space-around;
+	}
+
+	footer img{
+		width: auto;
+	}
+
+	.footer--logo{
+		width: 9.2%;
+	}
+}
+
+@media screen and (max-width: 480px){
+		
+		.header__bar{
+			flex-wrap: wrap;
+    		justify-content: center;
+    		padding: 15px 0px;
+    		padding-bottom: 20px;
+		}
+		
+		.menu__link{
+			font-size: 13px;
+			margin-right: 10px;
+		}
+
+		.menu{
+			margin-bottom: 22px;
+    		margin-top: 10px;
+		}
+
+		.hire__button{
+			width: 64.3%;
+		}
+
+		.home__text {
+			text-align: center;
+			padding-left: 0;
+		}
+		
+		.box--firstLine th{
+			padding-bottom: 25px;
+		}
+
+		.cell1 {
+    		padding-right: 9px;
+    		padding-left: 9px;
+		}
+
+		.box--alpha__title1 {
+    		margin-top: 30px;
+		}
+
+		.box--alpha__title{
+			font-size: 27px;
+		}
+
+		.cell2 {
+    		padding-left: 15px;
+    		padding-right: 15px;
+    	}
+		
+		.box--alpha__text{
+			font-size: 11px;
+		}
+
+		.service--items{
+			margin-bottom: 115px;
+		}
+
+		.box--alpha{
+			height: 455.63px;
+		}
+
+		.portafolio--flex {
+    		justify-content: space-between;
+		}
+
+		.title--container {
+    		width: 260px;
+    	}
+
+    	.portafolio {
+    		padding-bottom: 77px;
+    	}
+
+    	.resume--boxAlpha {
+    		padding: 0px 60px;
+    		padding-bottom: 70px;
+		}
+		
+		.resume--box img{
+			display: none;
+		}
+
+		.resume{
+			padding-bottom: 45px;
+		}
+
+		.title--container {
+    		width: 71%;
+		}
+
+		.contact__text {
+    		width: 80%;
+		}
+
+		form ul {
+   		 	width: 72.5%;
+		}
+
+		#name {
+    		width: 300px;
+		}
+
+		#email {
+   		 	width: 300px;
+		}
+
+		#adress {
+    		width: 300px;
+		}
+
+		textarea {
+    		width: 300px;
+		}
+
+		.info--list{
+			width: 85%;
+    		padding-left: 40px;
+    		padding-right: 0;
+		}
+
+		footer {
+    	padding: 15px 0;
+    }
+
+   		.footer--logo {
+    	width: 17%;
+	}
+
+		.footer--list li{
+			display: none;
+		}
+
+		.footer--list li:nth-child(2n){
+			display: block;
+		}
+
+		
+}
