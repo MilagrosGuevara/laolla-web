@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  			$('.slider').slick({
+  			$('#slider .slick').slick({
    				infinite: true,
  				centerMode: true,
  				slidesToShow: 5,
