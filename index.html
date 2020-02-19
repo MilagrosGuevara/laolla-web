@@ -8,6 +8,7 @@
 	<link rel="shortcut icon" type="image/x-png" href="images/logo.png"/>
 	<link rel="stylesheet" href="slick/slick.css">
 	<link rel="stylesheet" href="slick/slick-theme.css">
+
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<script src="slick/slick.min.js"></script>
 	<script type="text/javascript">
@@ -21,12 +22,24 @@
 			  });
 			});
 		</script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
 </head>
 <body>
 	<header class="header">
 		<div class="container">
+			
 			<div class="header__bar">
-				<h1><a class="header__logo" href="index.html"><img class="header__image" src="images/laolla.png" alt="Logo La Olla"></a></h1>
+				<div class="menu__bar">
+					<ul>
+						<li>RECETAS</li>
+						<li>CÓMO FUNCIONA</li>
+						<li>SERVICIO AL CLIENTE</li>
+					</ul>
+				<a href="#"><i class="fa fa-bars"></i></a>
+				</div>
+				<h1><a class="header__logo" href="index.html"><img class="header__image" src="images/laolla.svg" alt="Logo La Olla"></a></h1>
 				<nav class="header__nav">
 					<ul class="menu">
 						<li class="menu__item"><a class="menu__link" href="recetas.html">RECETAS</a></li>
@@ -39,10 +52,13 @@
 					</li>
 					<li class="menu__item menu__item--alpha">
 						<p class="menu__text">Hola, ingresa</p>
-						<span class="menu__text--alpha">Tu Cuenta</span>					
+						<a href="#" class="menu__text--alpha">Tu Cuenta</a>				
 					</li>
 					<li class="menu__item">
-						<a class="second-menu__link" href="comprar.html"><img src="images/shopping.png" alt="Shopping Cart"></a>
+						<div class="shopping__circle"><small>0</small></div>
+						<div class="shopping__cart">
+							<a class="shopping__button" href="#"><i class="fa fa-shopping-cart"><span class="shopping__text">S/. 0.00</span></i></a>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -63,21 +79,24 @@
 			<div class="container">
 				<ul class="steps">
 					<li class="steps__item">
-						<img src="images/recetario.png" alt="Recetario Icono">					
+						<img class="recipes__icon" src="images/recipes-icon.svg" alt="Recetario Icon">
+
 						<p class="steps__title">Elige lo que quieras cocinar</p>
 						<p class="steps__text">Echa un vistazo a nuestro menú</p>
 						<p class="steps__text">Añadelo al carrito de compras</p>
 						<p class="steps__text">Pague por su compra</p>
 					</li>
 					<li class="steps__item steps__item--alpha">
-						<img src="images/canasta.png" alt="Canasta Icono">					
+						<img class="basket__icon" src="images/basket-icon.svg" alt="Canasta Icon">		
+
 						<p class="steps__title steps__title--alpha">Nosotros te enviamos todo lo que necesites</p>
 						<p class="steps__text">Entregas a cualquier parte de Lima</p>
 						<p class="steps__text">Programe el día y hora de su entrega</p>
 						<p class="steps__text">Llega directo a la puerta de su casa</p>
 					</li>
-					<li class="steps__item steps__item--beta">
-						<img src="images/olla.png" alt="Olla Icono">					
+					<li class="steps__item steps__item--beta">					
+						<img class="olla__icon" src="images/olla-icon.svg" alt="Olla Icon">
+											
 						<p class="steps__title steps__title--beta">Cocina y disfruta de delicios platillos</p>
 						<p class="steps__text">Abre tu caja</p>
 						<p class="steps__text">Prepara los ingredientes y cocina</p>
@@ -90,20 +109,20 @@
 				<div class="pedido">
 					<p class="pedido__title">CADA PEDIDO CONTIENE</p>
 					<ul class="pedido__menu">
-						<li class="pedido__item">
-							<img src="images/check.png" alt="Check Icon">
+						<li class="pedido__item">							
+							<img class="pedido__image" src="images/check1.svg" alt="Check">				
 							<div class="pedido__text">Recetas paso a paso con las cantidades exactas de cada ingrediente de tu receta</div>
 						</li>
 						<li class="pedido__item">
-							<img src="images/check.png" alt="Check Icon">
+							<img class="pedido__image" src="images/check1.svg" alt="Check">			
 							<div class="pedido__text">Insumos directamente de productores peruanos, frescos y de temporada</div>
 						</li>
 						<li class="pedido__item">
-							<img src="images/check.png" alt="Check Icon">
+							<img class="pedido__image" src="images/check1.svg" alt="Check">			
 							<div class="pedido__text">Envases especiales para cada tipo de ingrediente los cuales entran perfectamente en tu nevera</div>
 						</li>
 						<li class="pedido__item">
-							<img src="images/check.png" alt="Check Icon">
+							<img class="pedido__image" src="images/check1.svg" alt="Check">			
 							<div class="pedido__text">Experiencia de cocina interactiva que te incitará a preparar muchos más antojos</div>
 						</li>
 					</ul>
@@ -232,7 +251,7 @@
 	<footer>
 		<div class="container">
 			<div class="footer__col">
-				<img src="images/olla-web.png" alt="Olla.pe Logo">
+				<img class="footer__logo" src="images/web.svg" alt="Olla.pe Logo">		
 			</div>
 			<div class="footer__col--alpha">
 				<p class="footer__title">SERVICIO</p>
@@ -250,7 +269,7 @@
 				<a class="footer__link" href="#"><p class="footer__text">FAQs y Ayuda</p></a>
 			</div>
 			<div class="footer__line"></div>
-			<div class="footer__col--delta">
+			<div class="footer__col--delta">				
 				<img class="footer__image" src="images/photos.png" alt="Grupo de Fotos">
 				<p class="footer__col--delta-text">Recibe recetas gratis a tu correo cada semana</p>
 				<form class="form">
@@ -260,8 +279,9 @@
 			</div>
 		</div>
 		<div class="container">
-			<div class="container__flex">
-				<img class="container__img" src="images/app.png" alt="AppStore & GooglePlay">
+			<div class="container__flex">				
+				<img class="container__img" src="images/app-store.png" alt="AppStore">
+				<img class="container__img container__imgA" src="images/google-play.png" alt="GooglePlay">
 				<p class="legals">©2017 Anomalia. La Olla es una experiencia interactiva de cocina, parte de esa experiencia incluye el delivery de alimentos frescos y perfectamente proporcionados asi como tambien recetas de comidas variadas.</p>
 				<ul class="footer__list">
 					<li class="footer__item">
@@ -277,6 +297,4 @@
 			</div>
 		</div>
 	</footer>
-	
-
 </body>
