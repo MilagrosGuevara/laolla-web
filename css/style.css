@@ -18,6 +18,11 @@
 }
 
 @font-face{
+	font-family: "avenir-lightoblique";
+	src: url(../fonts/avenirltstd-lightoblique.otf);
+}
+
+@font-face{
 	font-family: "avenir-book";
 	src: url(../fonts/avenirltstd-book.otf);
 }
@@ -32,6 +37,12 @@
 	src: url(../fonts/avenirltstd-roman.otf);
 }
 
+@font-face{
+	font-family: "avenir-heavy";
+	src: url(../fonts/avenirltstd-heavy.otf);
+}
+
+
 body{
 	margin: 0;
 }
@@ -41,6 +52,14 @@ body{
 	padding: 0;
 	margin: 0 auto;
 	
+}
+
+.container__alpha{
+    padding: 0;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+    display: flex;
 }
 
 .container__beta{	
@@ -53,6 +72,9 @@ body{
 /*--------------------HEADER--------------------*/
 .header{
 	width: 100%;
+	position: relative;
+	box-shadow: 0px 9px 20px 0px #00000073;
+
 }
 
 .menu__bar{
@@ -111,6 +133,11 @@ h1{
 		
 			}
 
+			.menu__linkA{
+				border-bottom: solid 4px #ffb718;
+				color: #ffb718;
+			}
+
 /*--------------------SECOND MENU--------------------*/
 
 .second-menu{
@@ -162,7 +189,7 @@ h1{
 	    font-size: 13px;
 	    vertical-align: bottom;
 	    padding-bottom: 10px;
-    	margin-bottom: 3px;
+    	
 	}
 
 	.shopping__text{
@@ -198,9 +225,9 @@ h1{
 .home{
 	background-image: url(../images/background.jpg);
 	background-size: cover;
-	background-position: center;	
-	box-shadow: inset 0px 9px 20px 0px #00000073;
-}
+	background-position: center;
+
+	}
 
 	.home__area{
 		display: flex;
@@ -250,7 +277,7 @@ h1{
 	background-image: url(../images/bg-plato.jpg);
 	background-size: cover;
 	background-position: center;
-	height:1150px;
+	height: 1150px;
 }
 
 	.steps{
@@ -289,6 +316,7 @@ h1{
 				line-height: 25.5px;
 				margin-top: 27px;
 				margin-bottom: 31px;
+				font-weight: normal;
 			}
 				.steps__title--alpha{
 					color: #ff9016;
@@ -414,6 +442,7 @@ h1{
 		margin: 0;
 		padding: 0;
 		margin-top: 51px;
+		font-weight: normal;
 	}
 
 	.opinion__autor{
@@ -757,7 +786,7 @@ footer{
 
 {
 	.header__nav{
-		display: none;
+		display: inline-flex;
 	}
 
 	.second-menu{
@@ -765,11 +794,9 @@ footer{
 	}
 
 	h1{
-		margin-left: auto;
-		margin-right: auto;
-		padding-right: 20px;
-		margin-top: 0px;
-   		margin-bottom: 0px;
+		padding-right: 73px;
+    	margin-top: 36px;
+    	margin-bottom: 18px;
 	}
 
 	.menu__bar{
@@ -792,3 +819,1599 @@ footer{
 		
 		
 }
+
+/*--------------------COMPRAR--------------------*/
+
+.buy__background{
+	background-color: #fdfcfa;	
+	display: flex;
+	background-image: url(../images/2348317.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.buy__box{
+	background-color: #ffffff;
+	height: 760px;
+	width: 1115px;
+	margin: 0 auto;
+	margin-top: 92px;
+	margin-bottom: 92px;
+	box-shadow: 8px 8px 20px 0px #00000029;
+}
+
+	.buy__title{
+		margin: 0 auto;
+		padding-top: 8px;
+		padding-bottom: 6.5px;
+    	text-align: center;
+    	background-color: #ffb718;
+    	color: #fff;
+    	font-family: "avenir-book";
+    	font-size: 32.5px;
+    	letter-spacing: 1px;
+    	margin-top: 25px;
+    	letter-spacing: 1.4px;
+	}
+
+	.buy__subtitle{
+		margin: 0 auto;
+		color: #5b5a5a;
+		font-family: "avenir-medium";
+		text-align: center;
+		font-size: 15px;
+		margin-top: 20px;
+	}
+
+	.buy__form{
+		margin: 0 auto;
+	    padding: 0;
+	    display: flex;
+	    width: 760px;
+	    justify-content: space-between;
+	    align-items: flex-start;	    
+	    margin-top: 55px;
+	}
+	
+	.buy__col{
+		width: 350px;
+		display: flex;
+		flex-direction: column;
+	}
+
+		.buy__col--alpha{
+			align-items: center;
+		}
+
+		.buy__box-image{
+			display: flex;
+			width: 475px;
+			margin-top: 6px;
+		}
+
+		.buy__facebook-button{
+			text-decoration: none;
+			color: #fff;
+			font-family: "avenir-roman";
+			font-size: 15.5px;
+			background-color: #23599b;	
+			padding: 15.5px 63.5px;
+			text-align: center;
+			border-radius: 3px;		
+			cursor: pointer;
+			box-shadow:3px 3px 6px 0px #00000054;
+			margin-bottom: 24px;
+		}
+
+		.buy__facebook-button:hover{
+			background-color: #1D497F;
+		}
+	
+	.buy__horizontal-container{
+		display: flex;
+		width: 312px;
+		height: 10px;
+		align-items: center;
+	}
+
+		.buy__horizontal-line{
+			flex-grow: 2;
+			height: 0.80px;
+			background-color: #e5e5e5;		
+		}
+
+		.buy__horizontal-text{
+			flex-basis: auto;
+			flex-grow: 0;
+			margin: 0px 10px 0px 10px;
+			text-align: center;
+			font-family: "avenir-medium";
+			font-size: 15px;
+		}
+
+	.buy__email{
+		margin-top: 25px;
+		border: solid 1.7px #f2f0ed;
+		font-family: "avenir-medium";
+		font-size: 14px;
+		width: 347.81px;
+		padding: 10px 11px;
+		margin-bottom: 14px;		
+	}
+
+	
+	.buy__email::-webkit-input-placeholder {
+        color: #8f8f8f;        
+    }
+
+    .buy__submit-button{
+    	text-decoration: none;
+    	color: #fff;
+    	font-family: "avenir-roman";
+		font-size: 15.5px;
+		border-radius: 3px;		
+		cursor: pointer;
+		box-shadow:3px 3px 6px 0px #00000054;
+		padding: 15.5px 127.83px;
+		background: linear-gradient(90deg, #ffb718, #ff9016);
+		margin-bottom: 20px;
+    }
+
+    	.buy__submit-button:hover{
+				background: linear-gradient(90deg, #FFAE00, #FF8300);
+			}
+
+	.buy__legals{
+		color: #9d9d9d;
+		font-family: "avenir-medium";
+		font-size: 11.5px;
+		line-height: 18px;
+	}
+
+	.buy__line-separation{
+		height: 1px;
+		width: 1080px;
+		background-color: #ffb718;
+		margin: 0 auto;
+    	margin-top: 60px;
+    	margin-bottom: 22px;
+	}
+
+	.buy__row{
+		display: flex;
+	    text-align: center;
+	    margin: 0 auto;
+	    padding: 0px;
+	    justify-content: space-around;
+	    align-items: flex-start;
+		padding: 0px 36px;
+	}
+
+	.buy__characteristic{
+		list-style: none;
+		width: 280px;
+	}
+
+	.buy__image-clock{
+		height: 58px;
+	}
+
+	.buy__image-pot{
+		height: 58px;		
+	}
+
+	.buy__image-salt{
+		height: 58px;
+	}
+
+	.buy__characteristic--title{
+		font-family: "avenir-medium";
+		font-size: 15px;
+		color: #fff;
+		background-color: #ffb718;
+		padding: 7.5px 0px;
+		margin: 0;
+    	margin-top: 6px;
+	}
+
+		.buy__characteristic--title--alpha{
+			background-color: #ff9016;
+		}
+
+		.buy__characteristic--title--beta{
+			background-color: #d7532b;
+		}
+
+	.buy__characteristic--text{
+		font-family: "avenir-medium";
+		font-size: 12px;
+		color: #ffb718;
+		margin: 0;
+		margin-top: 11px;
+		line-height: 23.5px;
+	}
+
+		.buy__characteristic--text--alpha{
+			color: #ff9016;
+		}
+
+		.buy__characteristic--text--beta{
+			color: #d7532b;
+		}
+
+/*--------------------COMPRAR PASO 2--------------------*/
+
+.buy2__background{
+	background-color: #fdfcfa;	
+	display: flex;
+	height: 800px;
+}
+
+	.buy2__box{
+	background-color: #ffffff;
+	height: 706px;
+	width: 1115px;
+	margin: 0 auto;
+	margin-top: 0px;
+	margin-bottom: 92px;
+	box-shadow: 8px 8px 20px 0px #00000029;
+	}
+
+	.buy2__statusbar{		
+		height: 114px;
+		margin: 0 auto;
+		display: flex;
+    	align-items: center;
+    	flex-flow: column;
+    	justify-content: center;
+    	border-bottom: solid 2px #ffb718;
+	}
+	
+	.buy2__statusarea{
+		display: flex;
+		width: 483px;
+		margin: 0 auto;		
+    	justify-content: space-between;
+    	align-content: center;    	 		  		
+    	align-items: center;
+
+	}
+
+	.buy2__deliveryarea{
+		display: flex;
+    	flex-flow: column;    	
+
+	}
+
+	.buy2__statusarea--alpha{
+		display: flex;
+    	flex-flow: row;
+    	justify-content: space-between;
+    	width: 575px;
+    	margin-top: 5px;
+	}
+
+
+		.buy2__circle{
+			background-color: #ffb718;
+			height: 27px;
+			width: 27.5px;
+			border-radius: 50%;
+			display: flex;
+    		align-items: center;
+   		 	justify-content: center;
+   		 	margin: 0 auto;   		 	
+
+		}
+
+			.buy2__littlecircle{
+				display: flex;
+			    background-color: #fff;
+			    height: 7.5px;
+			    width: 7.5px;
+			    border-radius: 50%;
+			}
+
+			.buy2__deliverytext{
+				color: #ffb718;
+				font-family: "avenir-medium";
+				font-size: 18px;
+				width: 116px;
+    			text-align: center;
+				margin: 0;
+			}
+
+				.buy2__atajo-link{
+					text-decoration: none;
+					color: #ffb718;
+				}
+
+		.buy2__circle--alpha{
+			background-color: #cdcdcd;
+			width: 19px;
+			height: 19px;
+			border-radius: 50%;
+			display: flex;
+    		align-items: center;
+   		 	justify-content: center;
+   		 	margin: 0 auto;   		 	
+		}
+
+		.buy2__deliverytext--alpha{
+			color: #7d7d7f;
+			font-family: "avenir-medium";
+			font-size: 18px;
+			width: 116px;
+    		text-align: center;
+    		margin: 0;
+		}
+		
+			.buy2__deliverytext--beta{
+				margin-left: 8px;
+			}
+
+		.buy2__horizontal-line{
+			flex-grow: 2;
+    		height: 3.5px;
+    		background-color: #d8d8d8;
+		}
+
+.buy2__resumen{
+	background: #ffb718;
+	width: 377px;
+	height: 592px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+	.buy2__resumen--iconarea{
+		flex-direction: column;
+	}
+
+	.buy2__resumen--circle{
+		background: #ffa817;
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		display: flex;
+    	justify-content: center;
+    	flex-direction: column;
+    	align-items: center;
+	}
+
+	.buy2__resumen--circle--image{
+		width: 40px;
+	}
+
+	.buy2__resumen--title{
+		margin: 0 auto;
+		font-family: "avenir-medium";
+		color: #fff;
+		font-size: 18px;
+		margin-top: -13px;
+	}
+	
+	.buy2__paragrahp1{
+		font-family: "avenir-light";
+		color: #fff;
+		width: 345px;
+		font-size: 13.5px;		
+		margin-top: 42px;
+		border-bottom: solid 1px #ffd987;
+		padding: 0px 7.5px;
+	}
+
+		.buy2__paragrahp1--row{
+			display: flex;
+    		flex-flow: row;
+    		justify-content: space-between;
+    		align-items: center;
+		}
+
+			.buy2__paragrahp1--row p{
+				margin: 0px;
+			}
+
+		.buy2__paragraph1--title{
+			margin: 0px;
+			font-family: "avenir-medium";
+			font-size: 16px;
+			margin-bottom: 7.5px;
+		}
+
+			.buy2__paragraph2--title{
+				font-size: 15px;
+			}
+
+		.buy2__paragrahp1--persons{
+			margin: 0px;
+			margin-top: 2px;
+			margin-bottom: 10px;
+		}
+
+	.buy2__paragrahp2{
+		font-family: "avenir-medium";
+    	color: #fff;
+    	width: 345px;
+    	font-size: 14px;
+    	padding: 0px 7.5px;
+    	margin-top: 11px;
+
+	}
+	
+	.buy2__paragrahp2--row{
+		margin-top: 7px;
+	}
+
+	.buy2__paragraph2--checkbox{
+		display: flex;
+	}
+		.buy2__check-icon{
+			width: 17px;
+			margin-right: 6px;
+		}
+
+		.buy2__paragrahp2--prices{
+			font-family: "avenir-light";
+			font-size: 13.5px;
+			letter-spacing: 0.3px;
+		}
+
+	.buy2__paragrahp3{
+		color: #fff;
+    	width: 345px;
+		padding: 0px 7.5px;
+		font-family: "avenir-heavy";
+		font-size: 18px;
+
+	}
+
+		.buy2__paragrahp3--igv{
+			font-family: "avenir-lightoblique";
+			font-size: 11px;
+		}
+
+		.buy2__paragrahp3--background{
+			background: #ff9016;
+			width: 100%;
+			display: flex;
+    		justify-content: center;
+    		padding: 10.8px 0px;
+    		margin-top: 10px;
+		}
+
+	.buy2__paragrahp4{
+		color: #fff;
+    	width: 345px;
+		padding: 0px 7.5px;
+		font-family: "avenir-roman";
+		font-size: 14px;
+		margin-top: 22px;
+	}
+
+		.buy3__span{
+			margin: 0;
+		}
+
+		.buy2__paragrahp4--title{
+			font-family: "avenir-heavy";
+			font-size: 15px;
+			margin: 0px;
+			margin-bottom: 7px;
+		}
+
+	.buy2__paragrahp5{
+		color: #fff;
+    	width: 345px;
+		padding: 0px 7.5px;
+		margin-top: 25px;
+	}
+
+		.buy2__paragrahp5--title{
+			font-family: "avenir-heavy";
+			font-size: 15px;
+
+		}
+
+		i.fa-pencil{
+			color: #fff;
+			font-size: 17px;
+		}
+	
+	.buy2__paragrahp5--alpha--title{
+		margin: 0;
+		font-family: "avenir-roman";
+		font-size: 14px;
+		margin-top: 9px;
+	}
+
+	.buy2__paragrahp5--alpha--textA{
+		font-family: "avenir-book";
+		font-size: 12px;
+		margin: 0;
+		margin-top: 4px;
+	}
+
+	.buy2__paragrahp5--alpha--textB{
+		font-family: "avenir-book";
+		font-size: 12px;
+		margin: 0;
+		margin-top: 4px;
+	}
+
+.buy2__box--alpha{
+	display: flex;
+}
+
+	.buy2__form{
+		display: flex;
+    	align-items: center;
+	    justify-content: center;
+	    width: 627px;
+	    margin: 0px auto;
+	    font-family: "avenir-heavy";
+	    color: #2c2c2b;
+	    font-size: 14px;
+	    margin-top: 75px;
+	    margin-bottom: 80px;
+	    margin-right: 55.5px;
+	    margin-left: 55.5px;		 
+    }
+
+		.buy__formA{
+			flex-flow: column;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+		}
+
+	.buy2__form--row{
+		display: flex;
+  		flex-direction: row;  		
+  		width: 627px;
+	}
+
+	.buy2__form--column{
+		display: flex;
+  		flex-direction: column;
+  		flex-basis: 100%;
+  		flex: 1;
+	}
+
+	.buy2__form--columnA{
+		margin-right: 18px;
+	}
+
+			#nombres, #direccion, #telefono, #creditcard{
+				color: #8f8f8f;
+				font-family: "avenir-medium";
+				font-size: 14.5px;
+				border: solid 1.5px #f2f0ed;
+				border-radius: 2px;
+				padding: 10px 12px;
+				margin-top: 5px;
+				margin-bottom: 18px;
+			}
+
+			#apellidos, #instructions, #district{
+				color: #8f8f8f;
+				font-family: "avenir-medium";
+				font-size: 14.5px;
+				border: solid 1.5px #f2f0ed;
+				border-radius: 2px;
+				padding: 10px 12px;
+				margin-top: 5px;
+				margin-bottom: 18px;
+
+			}
+
+			#tipodelivery{
+				color: #8f8f8f;
+				font-family: "avenir-medium";
+				font-size: 14.5px;
+				border: solid 1.5px #f2f0ed;
+				border-radius: 2px;
+				padding: 10px 12px;
+				margin-top: 5px;
+			}
+
+			#fecha{
+				color: #8f8f8f;
+				font-family: "avenir-medium";
+				font-size: 14.5px;
+				border: solid 1.5px #f2f0ed;
+				border-radius: 2px;
+				padding: 9px 12px;
+				margin-top: 5px;
+			}
+
+			.buy2__form--specialtxt{
+				font-family: "avenir-medium";
+				color: #5f5f5f;
+			}
+
+.buy2__box--beta{
+	display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+}
+
+	.buy2__submit-area{
+		width: 100%;
+	    margin: 0 auto;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    border-top: solid 2px #ffb718;
+		height: 131px;
+	}
+
+		.buy2__submit-button a{
+			background: linear-gradient(90deg, #ffb718, #ff9016);    		
+    		font-family: "elevation";
+    		padding: 17.8px 275px;
+    		border-radius: 2px;
+    		box-shadow: 3px 3px 8px 0px #00000042;
+			text-decoration: none;
+			color: #fff;
+		}
+
+		.buy2__submit-button a:hover{
+			background: linear-gradient(90deg, #FFAE00, #FF8300);
+		}
+
+/*--------------------COMPRAR PASO 3--------------------*/
+
+.buy3__background{
+	height: 906px;
+}	
+
+	.buy3__box{
+		height: 821px;
+		margin-bottom: 0;
+	}
+
+	.buy3__form{
+		margin-top: 49px;
+		margin-bottom: 138px;
+	}
+
+	.buy3__resumen{
+		height: 707px;
+		justify-content: flex-start;
+	}
+
+	.buy3__resumen--iconarea{
+		margin-top: 62px;
+	}
+
+		.buy2__horizontal-lineA{
+			background: #ffb718;
+		}
+	
+	.buy3__paragrahp4{
+		border-bottom: solid 1px #ffd987;
+		padding-bottom: 11px;
+	}
+				
+	.buy3__submit-button a{
+		background: linear-gradient(90deg, #ffb718, #ff9016);    		
+    	font-family: "elevation";
+    	padding: 17.5px 280px;
+    	border-radius: 2px;
+    	box-shadow: 3px 3px 8px 0px #00000042;
+		text-decoration: none;
+		color: #fff;
+	}
+
+		.buy3__submit-button a:hover{
+			background: linear-gradient(90deg, #FFAE00, #FF8300);
+		}
+
+
+	.buy3__paragrahp6{
+		color: #fff;
+    	width: 345px;
+		padding: 0px 7.5px;
+		margin-top: 25px;
+	}
+
+		.buy3__paragrahp6--alpha{
+			font-family: "avenir-book";
+			font-size: 14px;
+		}
+
+			.buy3__paragrahp6--alpha--name{
+				margin: 0;
+				margin-top: 5px;
+				margin-bottom: 2.25px;
+			}
+
+			.buy3__paragrahp6--alpha--lname{
+				margin: 0;
+				margin-bottom: 2.25px;
+			}
+
+			.buy3__paragrahp6--alpha--adress{
+				margin: 0;
+				margin-bottom: 2.25px;
+			}
+
+			.buy3__paragrahp6--alpha--district{
+				margin: 0;
+			}
+
+.buy3__radio--columnA{
+	background: #f2f2f2;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    border: solid 1px #e9e9e9;
+    padding: 0px 16px;
+    width: 100%;
+    place-content: space-between;
+   }
+	
+	.buy3__radio--columnB{
+		margin-top: 5px;
+		margin-bottom: 20px;
+	}
+
+.radioContainer{
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	user-select: none;
+	padding-left: 49px;
+}
+
+.radioContainer input{
+	display: none;
+}
+
+.radioContainer .checkmark{
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	background: #fdfcfa;
+	border: solid 1.9px #e7e7e7;
+	position: absolute;
+	left: 0;
+	top: -2.5px;
+	border-radius: 50%;
+}
+
+
+.radioContainer input:checked + .checkmark{
+	background-image: url(../images/check_1.svg);
+    background-repeat: no-repeat;
+    background-size: 11.4px 11.4px;
+    background-position: center;
+}
+
+.radioContainer input:unchecked + .checkmark:after{
+	content: "";
+  	position: absolute;
+  	display: none;
+}
+
+	.buy3__logo--container{
+		display: flex;
+    	margin: 0;
+    	padding: 0;
+    	align-items: center;
+    	flex-flow: row;
+	}
+
+		.buy3__logo--item{
+			display: flex;
+			background: #ffffff;
+			border-radius: 4px;
+			width: 50px;
+			height: 32px;
+			margin-left: 5px;
+		}
+
+			.visa--logo{
+				width: 41px;
+				margin: 0 auto;
+			}
+
+			.diners--logo{
+				width: 28px;
+				margin: 0 auto;
+			}
+
+			.master--logo{
+				width: 40px;
+				margin: 0 auto;
+			}
+
+			.american--logo{
+				width: 45px;
+				margin: 0 auto;
+			}
+
+		.buy3__cash--container{
+			display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    flex-flow: column;
+		    background: #fff;
+		    width: 220px;
+		    height: 59px;
+		    border-radius: 4px;
+		}
+
+			.buy3__cash--text{
+				font-size: 11.5px;
+				margin-bottom: 5px;
+			}
+
+			.buy3__cash--input{
+				font-family: "avenir-medium";
+				color: #8f8f8f;
+				border: solid 1px #d5d5d5;
+				text-align: center;
+				width: 189px;
+			}
+
+			 #number-credit-card{
+			 	color: #8f8f8f;
+    			font-family: "avenir-medium";
+			    font-size: 14.5px;
+			    border: solid 1.5px #f2f0ed;
+			    border-radius: 2px;
+			    padding: 10px 12px;
+			    margin-top: 5px;
+			    margin-bottom: 18px
+			 }
+
+			 #expiration-date{
+			 	color: #8f8f8f;
+    			font-family: "avenir-medium";
+			    font-size: 14.5px;
+			    border: solid 1.5px #f2f0ed;
+			    border-radius: 2px;
+			    padding: 10px 12px;
+			    margin-top: 5px;
+			    margin-bottom: 18px
+			 }
+
+			 #sec-code{
+			 	color: #8f8f8f;
+    			font-family: "avenir-medium";
+			    font-size: 14.5px;
+			    border: solid 1.5px #f2f0ed;
+			    border-radius: 2px;
+			    padding: 10px 12px;
+			    margin-top: 5px;
+			    margin-bottom: 18px
+			 }
+
+			 .buy3__form--columnC{
+			 	margin-right: 30px;
+			 	width: 100%;
+			 }
+
+			 .buy3__form--columnD{
+			 	margin-right: 11px;
+			 	width: 135px;
+
+			 }
+
+			  .buy3__form--columnE{
+			 	
+			 	width: 151px;
+
+			 }
+
+		.buy3__form--column{
+			display: flex;
+  			flex-direction: column;
+  			
+		}
+
+	.buy3__promcode{
+		color: #ffb718;
+		font-family: "avenir-medium";
+		text-decoration: none;
+		font-size: 14px;
+		margin-top: 32px;
+	}
+
+.buy3__legals{
+	text-align: center;
+    font-family: "avenir-lightoblique";
+    color: #484848;
+    font-size: 11.4px;
+    width: 750px;
+    margin: 0 auto;
+    line-height: 1.46;
+    
+}
+
+	.buy3__legals--link{
+		color: #ffb718;
+		font-weight: bolder;
+	}
+
+/*--------------------BOLETA--------------------*/
+
+.boleta__form{
+	background-image: url(../images/background-boleta.png);
+	background-repeat: no-repeat;
+    background-size: 738px 566px;
+	background-position: center;
+	width: 738px;
+	height: 572px;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    font-family: "avenir-medium";
+    color: #4c4c4c;
+    font-size: 18px;
+
+}
+
+	.boleta__background{
+		background: #f0f1f2;
+		width: 445px;
+		height: 550px;
+		box-shadow: 7px 7px 10px 0px #00000054;
+		padding-top: 50px;
+	}
+
+	.boleta__row{
+		display: flex;
+    	justify-content: space-between;
+    	border-bottom: solid 2px #ffb718;
+    	margin: 0 15px;
+    	padding-bottom: 5px;
+    	margin-bottom: 29px;
+	}
+
+	.boleta__column{
+		margin: 0 25px;
+	}
+
+		.boleta__columnA{
+			margin: 0 30px;
+		}
+
+		.boleta__title{
+			margin: 0;
+			font-family: "avenir-heavy";
+			color: #f28c22;
+			font-size: 19.5px;
+		}
+
+		.boleta__row--alpha{
+			display: flex;
+    		justify-content: space-between;
+    		background: #d7d7d8;
+    		padding: 9.5px 0;
+		}
+
+		.boleta__row--beta{
+			background: #f0f1f2;
+		}
+
+			.boleta__insumo{
+				margin: 0;
+				margin-left: 40px;
+			}
+
+			.boleta__precio{
+				margin: 0;
+				margin-right: 44px;
+			}
+
+		.boleta__row--delta{
+			display: flex;
+    		align-items: center;
+    		justify-content: flex-end;
+		}
+
+			.boleta__preciofinal{
+				text-align: center;
+			    margin: 0;
+			    margin-right: 25px;
+			    margin-top: 13px;
+			    color: #ffb718;
+			    border-top: solid 1.5px #383838;
+			    display: flex;
+			    padding: 0 14px;
+			    padding-top: 9px;
+			}
+
+/*--------------------RECETAS--------------------*/
+
+.recetas__background{
+	background-color: #fdfcfa;	
+	display: flex;
+	height: 1588px;
+	flex-flow: column;
+}
+
+	.recetas__banner{
+		background: #ffb718;
+		height: 81px;
+		width: 100%;
+		border-bottom-right-radius: 109px;
+		border-bottom-left-radius: 109px;
+	}
+
+		.recetas__banner--text{
+			font-family: "avenir-heavy";
+			color: #fff;
+			text-align: center;
+			font-size: 25.6px;
+			margin: 0;
+			margin-top: 35px;
+		}
+
+.recetas__container{	
+	width: 1175px;
+	padding: 0;
+	margin: 0 auto;	
+	height: 500px;
+}
+
+	.recetas__title{
+		display: flex;
+    	align-items: center;
+    	color: #302e2e;
+    	justify-content: space-between;
+    	padding-top: 16.5px;
+	}
+
+		.recetas__titletext{
+			margin: 0;
+			font-family: "avenir-heavy";
+			font-size: 23px;
+			
+		}
+
+		.recetas__seeall{
+			font-family: "avenir-medium";
+			font-size: 12.3px;
+			margin-top: 12px;
+		}
+
+			.recetas__seeallA{
+				color: #302e2e;
+				text-decoration: none;
+			}
+
+	.recetas__fila1{
+	    margin: 0;
+	    padding: 0;
+	    display: flex;
+	    margin-top: 16px;
+	    justify-content: space-between;
+	}
+
+		.recetas__element1{
+			display: flex;
+    		flex-flow: column;
+    		background: #fff;
+    		box-shadow: 3px 3px 9px 0px #00000017;
+		}
+
+			.receta__element1--img{
+				width: 280px;
+			}
+			
+			.receta__element1--title{
+				margin: 0;
+				color: #302e2e;
+				font-family: "avenir-heavy";
+				font-size: 14.8px;
+				margin-top: 14px;
+				padding-left: 10px;
+			}
+
+			.receta__element1--subtitle{
+				margin: 0;
+				padding-left: 10px;
+				color: #302e2e;
+				font-family: "avenir-roman";
+				font-size: 12.8px;
+				margin-top: 13px;
+			}
+
+			.receta__element1--info{
+			display: flex;
+    		align-items: center;
+			justify-content: space-between;
+			padding-left: 10px;
+			padding-right: 10px;
+			color: #aea9a9;
+			font-family: "avenir-light";
+			font-size: 13px;
+			margin-top: 23.8px;
+			margin-bottom: 13px;
+			}
+				.receta__element1--info--alpha{
+					display: flex;
+					align-items: center;
+				}
+
+				.receta__element1--info--kcal{
+					margin: 0;
+					margin-right: 13px;					
+				}
+
+				.receta__element1--info--time{
+					margin: 0;
+				}
+
+				.receta__element1--stars{
+					font-size: 13.5px
+					margin-top: 1.2px;
+				}
+
+	.recetas__fila--alpha{
+		padding-top: 48px;
+	}
+
+	.recetas__fila3{
+		display: flex;
+    	padding: 0;
+    	margin: 0;
+    	justify-content: space-between;
+	}	
+
+		.recetas__fila3__element{
+			display: flex;
+    		flex-flow: column;
+    		align-items: center;
+    		margin-top: 26px;
+		}
+
+			.recetas__fila3__img{
+
+				border-radius: 50%;
+				width: 182px;
+			}
+
+			.recetas__fila3__name{
+				font-family: "avenir-heavy";
+				color: #302e2e;
+				margin: 0;
+				margin-top: 32px;
+				font-size: 14.8px;
+			}
+
+.recetas__fila--beta{
+	padding-top: 45px;
+}
+
+	.receta-estrella-color{
+		color: #ffb718;
+	}
+
+
+/*--------------------LOMO DE CERDO--------------------*/
+
+.lomodecerdo__background{
+	background-color: #fdfcfa;	
+	display: flex;
+	height: 2470px;
+	flex-flow: column;
+}
+
+.lomodecerdo__img{
+	height: 408px;	
+	background-image: url(../images/lomo-de-cerdo-banner.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+i.fa-play-circle-o{
+	color: #fff;
+	font-size: 88px;
+	margin-bottom: 47px;
+}
+
+.lomodecerdo__socialmedia{
+	display: flex;
+    width: 935px;
+    justify-content: flex-end;    
+    margin-top: -96px;
+   
+}
+
+	.lomodecerdo__sclist{
+		display: flex;
+		margin: 0;
+    	padding: 0;
+    	background: #fff;
+    	padding: 10px 4px;
+    	align-items: center;
+    	justify-content: center;
+	}
+	
+
+		.lomodecerdo__scitem{
+			display: flex;
+			font-size: 17.8px;
+			padding: 0px 9.7px;
+		}
+
+		i.fa-envelope{
+			color: #303030;
+			font-size: 17px;
+		}
+
+		i.fa-facebook-square{
+			color: #23599c;
+			font-size: 18px;
+		}
+		
+		i.fa-twitter{
+			color: #00a3f5;
+			
+		}
+
+		i.fa-linkedin{
+			color: #0077b5;
+		}
+
+		i.fa-pinterest{
+			color: #ec0d16;
+		}
+
+		.lomodecerdo__scitem a{
+			display: flex;
+			text-decoration: none;
+		}
+
+.lomodecerdo__intro{
+	background: #fff;
+	height: 378px;
+	margin-top: 12px;
+	box-shadow: 5px 5px 20px 0px #00000033;
+}
+
+.lomodecerdo__intro--area{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+	.lomodecerdo__intro--titlebg{
+		background: #ffb718;
+		color: #fff;
+		font-family: "avenir-medium";
+		width: 589px;
+		border-bottom-right-radius:10px;
+	}
+
+		.lomodecerdo__intro--title{
+			margin: 0;
+			font-size: 25.4px;
+			padding-top: 26px;
+			padding-left: 32px;
+			padding-bottom: 1.5px;
+		}
+
+		.lomodecerdo__intro--buttons{
+			display: flex;
+			margin: 0;
+			padding: 0;	
+			margin-right: 25px;
+		}
+		
+		.lomodecerdo__intro--item{
+			display: flex;			
+			border: solid 1px #f0f0ef;
+			border-radius: 50%;
+			padding: 7.2px 8.7px;
+			margin-left: 16px;
+			
+   			align-items: center;
+    		justify-content: center;
+
+		}
+
+		.lomodecerdo__intro--item a{
+			display: flex;
+			text-decoration: none;
+			
+		}
+		
+
+		i.fa-download{
+			color: #ffb718;
+			font-size: 24px;
+		}
+
+.lc__radioContainer{
+	display: flex;
+	position: relative;
+	cursor: pointer;
+	user-select: none;
+	
+}
+
+	.lc__radioContainer input{
+		display: none;
+	}
+
+	.lc__radioContainer .lc__checkmark{
+		display: flex;
+		width: 21px;
+		height: 21px;
+		background-image: url(../images/star-o.svg);
+		background-repeat: no-repeat;    	
+    	background-position: center;
+		
+	}
+
+	.lc__radioContainer input:checked + .lc__checkmark{
+		background-image: url(../images/star.svg);
+    	background-repeat: no-repeat;    	
+    	background-position: center;
+	}
+
+	.lc__radioContainer input:unchecked + .lc__checkmark:after{
+		content: "";
+  		position: absolute;
+  		display: none;
+	}
+
+	.lc__radioContainer .lc__checkmark1{
+		display: flex;
+		width: 21px;
+		height: 21px;
+		background-image: url(../images/heart-o.svg);
+		background-repeat: no-repeat;    	
+    	background-position: center;
+		
+	}
+
+	.lc__radioContainer input:checked + .lc__checkmark1{
+		background-image: url(../images/heart.svg);
+    	background-repeat: no-repeat;    	
+    	background-position: center;
+	}
+
+	.lc__radioContainer input:unchecked + .lc__checkmark1:after{
+		content: "";
+  		position: absolute;
+  		display: none;
+	}
+
+	.lomodecerdo__intro--area2{
+		font-family: "avenir-medium";
+		color: #302e2e;
+		margin-left: 33px;
+		margin-right: 18.1px;
+		margin-top: 5.5px;
+		padding-bottom: 25px;
+		border-bottom: solid 1px #ffb718;
+	}
+
+		.lomodecerdo__intro--area2--text{
+			margin:0;
+			font-size: 14.4px;
+		}
+	.lomodecerdo__intro--area3{
+		display: flex;
+		margin-top: 15.5px;
+		justify-content: space-between;
+	}
+
+	.lomodecerdo__intro--area3--column{
+		display: flex;
+		flex-flow: column;
+		font-family: "avenir-roman";
+		font-size: 12.8px;
+		margin-left: 33px;
+		width: 550px;
+		color: #302e2e;
+	}
+
+	.lomodecerdo__intro--area3--text{
+		margin: 0;
+		line-height: 17.5px;
+		margin-bottom: 28px;
+	}
+
+	.lomodecerdo__intro--area3--extra{
+		margin: 0;
+		font-size: 12px;
+		color: #9c9c9c;
+	}
+
+	.lomodecerdo__intro--area3--extra1{
+		margin: 0;
+		font-size: 12px;
+		color: #9c9c9c;
+		margin-top: 22px;
+		margin-bottom: 18px;
+	}
+
+		.lomodecerdo__intro--area3--extra span{
+			color: #ffb718;
+			font-family: "avenir-medium";
+		}
+
+		.lomodecerdo__intro--area3--extra1 span{
+			color: #ffb718;
+			font-family: "avenir-medium";
+		}
+	
+	.lomodecerdo__intro--area3--column1{
+		display: flex;
+		flex-flow: column;
+		margin-right: 34.5px;
+		margin-top: 4px;
+		width: 273px;
+	}
+
+		.lomodecerdo__intro--area3--row{
+			display: flex;
+			flex-flow: row;
+			font-family: "avenir-roman";
+			color: #302e2e;
+			font-size: 13px;
+			justify-content: space-between;	
+		}
+
+			.lomodecerdo__intro--area3--row1{
+				margin: 0;
+				font-family: "avenir-heavy";
+			}
+
+			.lomodecerdo__intro--area3--row2{
+				margin: 0;
+			}
+
+		.lomodecerdo__intro--area3--rowS{
+			margin: 24px 0;
+		}
+
+.lomodecerdo__intro--area4{
+	display: flex;
+	flex-flow: wrap;
+	padding-left: 32px;
+	border-top: solid 1px #ffb718;
+	margin-left: 2px;
+	height: 73px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+	.lomodecerdo__intro--area4--text{
+		margin: 0;
+		font-family: "avenir-medium";
+		color: #302e2e;
+		font-size: 13.4px;
+	}
+
+	.lomodecerdo__intro--button{
+		text-decoration: none;
+    	color: #fff;
+    	font-family: "elevation";
+    	font-size: 11.2px;
+    	border-radius: 3px;
+    	cursor: pointer;
+    	box-shadow: 3px 3px 6px 0px #00000054;
+    	padding: 12.5px 80px;
+    	background: linear-gradient(90deg, #ffb718, #ff9016);
+    	margin-right: 18px;
+	}
+
+.lomodecerdo__receta{
+	background: #fff;
+	height: 1291px;
+	margin-top: 32px;
+	box-shadow: 5px 5px 20px 0px #00000033;
+}
+
+	.lomodecerdo__receta--titlebg{
+		background: #ffb718;
+		color: #fff;
+		font-family: "avenir-medium";
+		width: 184.2px;
+		border-bottom-right-radius:10px;
+		margin-bottom: 18px;
+		
+	}
+		.lomodecerdo__receta--title{
+			margin: 0;
+			font-size: 20.4px;
+			padding-top: 15px;
+			padding-left: 34px;
+			padding-bottom: 13px;
+		}
+
+	.lomodecerdo__receta--row1{
+		display: flex;
+		margin-left: 35px;
+		align-items: flex-start;
+		margin-bottom: 7px;
+	}
+
+		.lomodecerdo__receta--img{
+			width: 286.5px;
+
+		}
+	
+	.lomodecerdo__receta--row1--alpha{
+		margin-left: 25px;
+		align-items: flex-start;
+		display: flex;
+	}
+
+	.lomodecerdo__receta--row1--beta{
+		border-top: solid 1px #ffb718;
+		padding-top: 18px;
+		width: 100%;
+   		margin-right: 15px;
+
+	}
+
+	.lomodecerdo__receta--row1--delta{
+		border-bottom: solid 1px #ffb718;
+		padding-bottom: 99px;
+	}
+
+		.lomodecerdo__recetas--circle{
+			font-family: "avenir-medium";
+		    color: #fff;
+		    background-color: #ffb718;
+		    border-radius: 50%;
+		    text-align: center;
+		    padding: 7.8px 14.5px;
+		    align-items: center;
+		    justify-content: center;
+		    display: flex;
+		    flex-flow: column;
+		}
+
+			.lomodecerdo__recetas--circleT{
+				    margin: 0;
+				    font-size: 19px;
+				    text-align: center;
+				    margin-top: 1.1px;
+			}
+
+			.lomodecerdo__receta--step1{
+				margin: 0;
+				font-family: "avenir-roman";
+				font-size: 12.6px;
+				margin-left: 22px;
+				line-height: 20px;
+				width: 480px;
+				
+			}
+
+			.lomodecerdo__receta--step1 span{
+				font-weight: bolder;
+			}
+
+			.lomodecerdo__receta--step4{
+				margin-top: 22px;
+			}
+
+.recetas__recomendations--area{
+	width: 1175px;
+	margin: 0 auto;
+}
+
+	.recetas__fila--delta {
+    	padding-top: 28px;
+	}
+

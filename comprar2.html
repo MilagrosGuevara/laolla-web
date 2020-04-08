@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<title>Comprar Paso 2</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="shortcut icon" type="image/x-png" href="images/logo.png"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes">
+
+</head>
+<body>	
+	<header class="header">
+		<div class="container">
+			<div class="header__bar">
+				<div class="menu__bar">
+					<ul>
+						<li>RECETAS</li>
+						<li>CÓMO FUNCIONA</li>
+						<li>SERVICIO AL CLIENTE</li>
+					</ul>
+				<a href="#"><i class="fa fa-bars"></i></a>
+				</div>
+				<h1><a class="header__logo" href="index.html"><img class="header__image" src="images/laolla.svg" alt="Logo La Olla"></a></h1>
+				<nav class="header__nav">
+					<ul class="menu">
+						<li class="menu__item"><a class="menu__link" href="recetas.html">RECETAS</a></li>
+						<li class="menu__item"><a class="menu__link" href="#work">CÓMO FUNCIONA</a></li>
+						<li class="menu__item"><a class="menu__link" href="#service">SERVICIO AL CLIENTE</a></li>
+					</ul>
+				</nav>
+				<ul class="second-menu">
+					<li class="menu__item"><a class="second-menu__link" href="#"><i class="icon-search fa fa-search" aria-hidden="true"></i></a>						
+					</li>
+					<li class="menu__item menu__item--alpha">
+						<p class="menu__text">Hola, ingresa</p>
+						<a href="#" class="menu__text--alpha">Tu Cuenta</a>				
+					</li>
+					<li class="menu__item">
+						<div class="shopping__circle"><small>0</small></div>
+						<div class="shopping__cart">
+							<a class="shopping__button" href="comprar.html"><i class="fa fa-shopping-cart"><span class="shopping__text">S/. 0.00</span></i></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main class="buy2__background">
+		<div class="buy2__box">
+			<div class="buy2__statusbar">
+				<div class="buy2__statusarea">
+					<div class="buy2__deliveryarea">
+						<div class="buy2__circle"><div class="buy2__littlecircle"></div></div>						
+					</div>
+					<div class="buy2__horizontal-line"></div>
+					<div class="buy2__deliveryarea">
+						<div class="buy2__circle--alpha"></div>						
+					</div>
+					<div class="buy2__horizontal-line"></div>
+					<div class="buy2__deliveryarea">
+						<div class="buy2__circle--alpha"></div>						
+					</div>							
+				</div>
+				<div class="buy2__statusarea--alpha">
+						<h2 class="buy2__deliverytext"><a class="buy2__atajo-link" href="comprar2.html">Delivery</a></h2>
+						<h2 class="buy2__deliverytext--alpha buy2__deliverytext--beta">
+						Pago</h2>
+						<h2 class="buy2__deliverytext--alpha">Detalle Boleta</h2>	
+					</div>
+			</div>
+			<div class="buy2__box--alpha">			
+				<div class="buy2__box--beta">
+				<div class="buy2__form">
+					<form action="/action_page.php" class="buy__formA">
+					<div class="buy2__form--row">
+						<div class="buy2__form--column buy2__form--columnA">
+							<label>Nombres</label>
+							<input type="text" id="nombres" value="Raúl Daniel">
+						</div>
+						<div class="buy2__form--column">
+							<label>Apellidos</label>
+							<input type="text" id="apellidos" value="Gómez Rodriguez">
+						</div>						
+					</div>
+					<div class="buy2__form--row">
+						<div class="buy2__form--column buy2__form--columnA">
+							<label>Dirección</label>
+							<input type="text" id="direccion" value="Av. Primavera 464">
+						</div>
+						<div class="buy2__form--column">
+							<label>Distrito</label>
+							  <select id="district" name="distrito">
+							    <option value="barranco">Barranco</option>
+							    <option value="brena">Breña</option>
+							    <option value="cercado">Cercado</option>
+							    <option value="jesusmaria">Jesús María</option>
+							    <option value="lamolina">La Molina</option>
+							    <option value="lavictoria">La Victoria</option>
+							    <option value="lince">Lince</option>
+							    <option value="magdalena">Magdalena</option>
+							    <option value="miraflores">Miraflores</option>
+							    <option value="pueblolibre">Pueblo Libre</option>
+							    <option value="sanborja">San Borja</option>
+							    <option value="sanisidro">San Isidro</option>
+							    <option value="sanmiguel">San Miguel</option>
+							    <option value="surco" selected>Santiago de Surco</option>
+							    <option value="surquillo">Surquillo</option>
+							  </select>
+						</div>					
+					</div>
+					<div class="buy2__form--row">
+						<div class="buy2__form--column buy2__form--columnA">
+							<label>Teléfono <span class="buy2__form--specialtxt">(solo para fines de entrega)</span></label>
+							<input type="tel" id="telefono" value="(01) 372-7985">
+						</div>
+						<div class="buy2__form--column">
+							<label>Instrucciones Especiales (opcional)</label>
+							<select id="instructions" name="instrucciones">
+								<option value="frontdoor" selected>Dejarlo en la puerta de enfrente</option>
+								<option value="lobby">Dejarlo en el lobby</option>
+								<option value="bell">Tocar el timbre</option>				  
+								<option value="message">Llamar antes de llegar</option>
+							</select>
+						</div>
+					</div>
+					<div class="buy2__form--row">
+						<div class="buy2__form--column buy2__form--columnA">
+							<label>Fecha</label>
+							<input type="date" id="fecha" value="2019-12-16">
+						</div>
+						<div class="buy2__form--column">
+							<label>Tipo de Delivery</label>
+							<select id="tipodelivery" name="delverytype">
+								<option value="standard" selected="">Delivery Standard</option>
+								<option value="express">Delivery Express</option>
+							</select>
+						</div>
+					</div>	
+				</form>
+				</div>
+				<div class="buy2__submit-area">
+					<div class="buy2__submit-button"><a href="comprar3.html">SIGUIENTE</a></div>
+				</div>
+			</div>
+			<div class="buy2__resumen">
+				<div class="buy2__resumen--iconarea">
+					<div class="buy2__resumen--circle">
+					<img class="buy2__resumen--circle--image" src="images/boleta.svg" alt="Boleta Icono">
+					</div>
+					<h3 class="buy2__resumen--title">Resumen</h3>
+				</div>
+				<div class="buy2__paragrahp1">
+					<p class="buy2__paragraph1--title">Plan Clásico</p>
+					<div class="buy2__paragrahp1--row">
+						<p>Lasagna Italiana</p>
+						<p class="buy2__paragrahp2--prices">S/. 6.76</p>
+					</div>
+					<p class="buy2__paragrahp1--persons">2 Personas</p>
+				</div>
+				<div class="buy2__paragrahp2">
+					<div class="buy2__paragrahp1--row">
+						<p class="buy2__paragraph2--title">Envío</p>
+						<p class="buy2__paragrahp2--prices">S/. 6.00</p>
+					</div>
+					
+					<div class="buy2__paragrahp1--row buy2__paragrahp2--row">											
+						<p class="buy2__paragraph2--checkbox"><img class="buy2__check-icon" src="images/check-circle-regular.svg" alt="Check Icon Comprar">Ingredientes cortados y picados</p>	
+						<p class="buy2__paragrahp2--prices">S/. 3.00</p>
+					</div>
+				</div>
+				<div class="buy2__paragrahp3--background">
+					<div class="buy2__paragrahp3">
+						<div class="buy2__paragrahp1--row">
+							<p>Total <span class="buy2__paragrahp3--igv">(incluye IGV 17%)</span></p>
+							<p>S/. 17.41</p>
+						</div>
+					</div>
+				</div>
+				<div class="buy2__paragrahp4">
+					<p class="buy2__paragrahp4--title">Información Personal</p>
+					<span>raulgomezrodriguez@hotmail.com</span>
+				</div>
+				<div class="buy2__paragrahp5">
+					<div class="buy2__paragrahp1--row">
+						<p class="buy2__paragrahp5--title">Información del Delivery</p>
+						<a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+					</div>
+					<div class="buy2__paragrahp5--alpha">
+						<p class="buy2__paragrahp5--alpha--title">Tu primer delivery:</p>
+						<p class="buy2__paragrahp5--alpha--textA">Miércoles, Diciembre 16</p>
+						<p class="buy2__paragrahp5--alpha--textB">7:00 pm (hora aprox. de llegada)</p>
+					</div>					
+				</div>				
+			</div>
+			</div>		
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="footer__col">
+				<img class="footer__logo" src="images/web.svg" alt="Olla.pe Logo">		
+			</div>
+			<div class="footer__col--alpha">
+				<p class="footer__title">SERVICIO</p>
+				<a class="footer__link" href="#"><p class="footer__text">Recetas</p></a>
+				<a class="footer__link" href="#"><p class="footer__text">Como funciona</p></a>
+				<a class="footer__link" href="#"><p class="footer__text">Ingresa</p></a>
+				<a class="footer__link" href="#"><p class="footer__text">Registrate</p></a>
+				<a class="footer__link" href="#"><p class="footer__text">Terminos de Servicio</p></a>
+			</div>
+			<div class="footer__col--beta">
+				<p class="footer__title">LA OLLA</p>
+				<a class="footer__link" href="#"><p class="footer__text">Sobre Nosotros</p></a>
+				<a class="footer__link" href="#"><p class="footer__text">Prensa</p></a>
+				<a class="footer__link" href="#"><p class="footer__text">Legal</p></a>
+				<a class="footer__link" href="#"><p class="footer__text">FAQs y Ayuda</p></a>
+			</div>
+			<div class="footer__line"></div>
+			<div class="footer__col--delta">				
+				<img class="footer__image" src="images/photos.png" alt="Grupo de Fotos">
+				<p class="footer__col--delta-text">Recibe recetas gratis a tu correo cada semana</p>
+				<form class="form">
+					<input class="email" type="email" placeholder="Email Adress"><!--
+							--><button class="button__form" type="submit"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+				</form>
+			</div>
+		</div>
+		<div class="container">
+			<div class="container__flex">				
+				<img class="container__img" src="images/app-store.png" alt="AppStore">
+				<img class="container__img container__imgA" src="images/google-play.png" alt="GooglePlay">
+				<p class="legals">©2017 Anomalia. La Olla es una experiencia interactiva de cocina, parte de esa experiencia incluye el delivery de alimentos frescos y perfectamente proporcionados asi como tambien recetas de comidas variadas.</p>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="#"><i class="fa fa-facebook footer__icon" aria-hidden="true"></i></a>
+					</li>
+					<li class="footer__item">
+						<a href="#"><i class="fa fa-instagram footer__icon" aria-hidden="true"></i></a>
+					</li>
+					<li class="footer__item">
+						<a href="#"><i class="fa fa-youtube-play footer__icon" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
