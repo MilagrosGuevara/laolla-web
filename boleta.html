@@ -4,16 +4,17 @@
 
 	<title>Detalle Boleta</title>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="shortcut icon" type="image/x-png" href="images/logo.png"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes">
-		
+	
 </head>
-<body>	
+<body class="body__bs">	
 	<header class="header">
-		<div class="container">
+		<div class="container container__bs">
 			<div class="header__bar">
 				<div class="menu__bar">
 					<ul>
@@ -26,22 +27,22 @@
 				<h1><a class="header__logo" href="index.html"><img class="header__image" src="images/laolla.svg" alt="Logo La Olla"></a></h1>
 				<nav class="header__nav">
 					<ul class="menu">
-						<li class="menu__item"><a class="menu__link" href="recetas.html">RECETAS</a></li>
-						<li class="menu__item"><a class="menu__link" href="#work">CÓMO FUNCIONA</a></li>
-						<li class="menu__item"><a class="menu__link" href="#service">SERVICIO AL CLIENTE</a></li>
+						<li class="menu__item"><a class="menu__link menu__linkbs" href="recetas.html">RECETAS</a></li>
+						<li class="menu__item"><a class="menu__link menu__linkbs" href="#work">CÓMO FUNCIONA</a></li>
+						<li class="menu__item"><a class="menu__link menu__linkbs" href="#service">SERVICIO AL CLIENTE</a></li>
 					</ul>
 				</nav>
 				<ul class="second-menu">
-					<li class="menu__item"><a class="second-menu__link" href="#"><i class="icon-search fa fa-search" aria-hidden="true"></i></a>						
+					<li class="menu__item"><a class="second-menu__link" href="#"><i class="icon-search icon-search-bs fa fa-search" aria-hidden="true"></i></a>						
 					</li>
 					<li class="menu__item menu__item--alpha">
-						<p class="menu__text">Hola, ingresa</p>
+						<p class="menu__text menu__text__bs">Hola, ingresa</p>
 						<a href="#" class="menu__text--alpha">Tu Cuenta</a>				
 					</li>
 					<li class="menu__item">
-						<div class="shopping__circle"><small>0</small></div>
+						<div class="shopping__circle shopping__circle__bs"><small class="shopping__articles__bs">0</small></div>
 						<div class="shopping__cart">
-							<a class="shopping__button" href="comprar.html"><i class="fa fa-shopping-cart"><span class="shopping__text">S/. 0.00</span></i></a>
+							<a class="shopping__button shopping__button__bs" href="comprar.html"><i class="fa fa-shopping-cart"><span class="shopping__text">S/. 0.00</span></i></a>
 						</div>
 					</li>
 				</ul>
@@ -126,8 +127,8 @@
 					</div>
 				</div>
 				<div class="buy2__submit-area">
-					<div class="buy3__submit-button"><a href="#">ACEPTAR</a></div>
-				</div>
+					<div class="buy3__submit-button"><button id="buy2__button" href="#">CONFIRMAR</button></div>
+				</div>				
 			</div>
 			<div class="buy2__resumen buy3__resumen">
 				<div class="buy2__resumen--iconarea buy3__resumen--iconarea">
@@ -163,11 +164,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="buy2__paragrahp4 buy3__paragrahp4">
-					<p class="buy2__paragrahp4--title">Información Personal</p>
+				<div class="buy2__paragrahp4 buy3__paragrahp4 buy3__paragrahp4__bs">
+					<p class="buy2__paragrahp4--title buy2__paragrahp4--title__bs">Información Personal</p>
 					<span class="buy3__span">raulgomezrodriguez@hotmail.com</span>
 				</div>
-				<div class="buy3__paragrahp6">
+				<div class="buy3__paragrahp6 buy3__paragrahp6__bs">
 					<div class="buy2__paragrahp1--row">
 						<p class="buy2__paragrahp5--title">Dirección del Delivery</p>
 						<a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
@@ -184,7 +185,7 @@
 						<p class="buy2__paragrahp5--title">Información del Delivery</p>
 						<a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 					</div>
-					<div class="buy2__paragrahp5--alpha">
+					<div class="buy2__paragrahp5--alpha buy2__paragrahp5--alpha__bs">
 						<p class="buy2__paragrahp5--alpha--title">Tu primer delivery:</p>
 						<p class="buy2__paragrahp5--alpha--textA">Miércoles, Diciembre 16</p>
 						<p class="buy2__paragrahp5--alpha--textB">7:00 pm (hora aprox. de llegada)</p>
@@ -193,30 +194,30 @@
 			</div>
 			</div>
 			<div class="buy3__legals">
-				<p>Una vez que finalice el proceso de pago, se le cobrará el importe reflejado en el resumen de su pedido. Se puede modificar, detener o cancelar el pedido sólo dentro de las 6 horas como mínimo tras emitir la orden.  Para obtener más información, consulte nuestros <a href="#" class="buy3__legals--link">Términos de Uso.</a></p>	
+				<p class="buy3__legals__bs">Una vez que finalice el proceso de pago, se le cobrará el importe reflejado en el resumen de su pedido. Se puede modificar, detener o cancelar el pedido sólo dentro de las 6 horas como mínimo tras emitir la orden.  Para obtener más información, consulte nuestros <a href="#" class="buy3__legals--link">Términos de Uso.</a></p>	
 			</div>
 				
 		</div>
 	</main>
-	<footer>
+	<footer class="footer__bs">
 		<div class="container">
 			<div class="footer__col">
 				<img class="footer__logo" src="images/web.svg" alt="Olla.pe Logo">		
 			</div>
 			<div class="footer__col--alpha">
 				<p class="footer__title">SERVICIO</p>
-				<a class="footer__link" href="#"><p class="footer__text">Recetas</p></a>
-				<a class="footer__link" href="#"><p class="footer__text">Como funciona</p></a>
-				<a class="footer__link" href="#"><p class="footer__text">Ingresa</p></a>
-				<a class="footer__link" href="#"><p class="footer__text">Registrate</p></a>
-				<a class="footer__link" href="#"><p class="footer__text">Terminos de Servicio</p></a>
+				<a class="footer__link footer__link__bs" href="#"><p class="footer__text">Recetas</p></a>
+				<a class="footer__link footer__link__bs" href="#"><p class="footer__text">Como funciona</p></a>
+				<a class="footer__link footer__link__bs" href="#"><p class="footer__text">Ingresa</p></a>
+				<a class="footer__link footer__link__bs" href="#"><p class="footer__text">Registrate</p></a>
+				<a class="footer__link footer__link__bs" href="#"><p class="footer__text">Terminos de Servicio</p></a>
 			</div>
 			<div class="footer__col--beta">
 				<p class="footer__title">LA OLLA</p>
-				<a class="footer__link" href="#"><p class="footer__text">Sobre Nosotros</p></a>
-				<a class="footer__link" href="#"><p class="footer__text">Prensa</p></a>
-				<a class="footer__link" href="#"><p class="footer__text">Legal</p></a>
-				<a class="footer__link" href="#"><p class="footer__text">FAQs y Ayuda</p></a>
+				<a class="footer__link footer__link__bs" href="#"><p class="footer__text">Sobre Nosotros</p></a>
+				<a class="footer__link footer__link__bs" href="#"><p class="footer__text">Prensa</p></a>
+				<a class="footer__link footer__link__bs" href="#"><p class="footer__text">Legal</p></a>
+				<a class="footer__link footer__link__bs" href="#"><p class="footer__text">FAQs y Ayuda</p></a>
 			</div>
 			<div class="footer__line"></div>
 			<div class="footer__col--delta">				
@@ -247,5 +248,13 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="popper/popper.min.js"></script>
+	<script src="bootstrap4/js/bootstrap.min.js"></script>
+	
+	<!-- Pugin Sweet Alert 2 -->
+	<script src="plugins/sweetAlert2/sweetalert2.all.min.js"></script>
+	<script src="codigo.js"></script>
 </body>
 </html>
