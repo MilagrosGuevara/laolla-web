@@ -1544,7 +1544,7 @@ footer{
 		.buy2__submit-button a{
 			background: linear-gradient(90deg, #ffb718, #ff9016);    		
     		font-family: "elevation";
-    		padding: 17.8px 275px;
+    		padding: 17.8px 106.8px;
     		border-radius: 2px;
     		box-shadow: 3px 3px 8px 0px #00000042;
 			text-decoration: none;
@@ -1558,7 +1558,7 @@ footer{
 		#buy2__button{
 			background: linear-gradient(90deg, #ffb718, #ff9016);    		
     		font-family: "elevation";
-    		padding: 16.5px 134px;
+    		padding: 16.5px 82.5px;
     		border-radius: 2px;
     		box-shadow: 3px 3px 8px 0px #00000042;
 			text-decoration: none;
@@ -1615,7 +1615,7 @@ footer{
 	.buy3__submit-button a{
 		background: linear-gradient(90deg, #ffb718, #ff9016);    		
     	font-family: "elevation";
-    	padding: 17.5px 280px;
+    	padding: 17.5px 106.8px;
     	border-radius: 2px;
     	box-shadow: 3px 3px 8px 0px #00000042;
 		text-decoration: none;
