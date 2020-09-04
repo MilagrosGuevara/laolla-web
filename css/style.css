@@ -157,7 +157,7 @@ h1{
 			.menu__link:hover{
 				border-bottom: solid 4px #ffb718;
 				color: #ffb718;
-		
+				text-decoration: none;
 			}
 
 			.menu__linkA{
@@ -167,6 +167,7 @@ h1{
 
 			.menu__linkbs{
 				margin-right: 10.5px;
+
 			}
 
 /*--------------------SECOND MENU--------------------*/
@@ -216,6 +217,11 @@ h1{
 			letter-spacing: 0.5px;
 			text-decoration: none;		
 		}
+
+			.menu__text--alpha:hover{
+				text-decoration: none;
+				color: #b4b2b3;	
+			}
 
 	.shopping__button{
 		display: inline-block;
@@ -1209,6 +1215,11 @@ footer{
 					text-decoration: none;
 					color: #ffb718;
 				}
+
+					.buy2__atajo-link:hover{
+						text-decoration: none;
+						color: #ffb718;
+					}
 
 		.buy2__circle--alpha{
 			background-color: #cdcdcd;
